@@ -1,5 +1,6 @@
 class CreateArtists < ActiveRecord::Migration[4.2]
   def change
+    drop_table 
     create_table :artists do |t|
       t.string :name
       t.string :genre
